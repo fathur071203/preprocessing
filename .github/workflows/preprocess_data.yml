@@ -18,7 +18,7 @@ jobs:
     - name: Set up Python Environment
       uses: actions/setup-python@v5
       with:
-        python-version: '3.9' # Sesuaikan dengan versi Python Anda
+        python-version: '3.10' # Sesuaikan dengan versi Python Anda
 
     - name: Install Python Dependencies # Langkah ketiga: Menginstal library Python yang dibutuhkan
       run: |
@@ -28,7 +28,7 @@ jobs:
     - name: Run Data Preprocessing Script
       run: |
         # Panggil script preprocessing Anda dari root repository MLOPS/
-        python preprocessing/automate_Nama-siswa.py
+        python preprocessing/automate_Muhammad Fathurrahman.py
 
     - name: Configure Git for Commit
       run: |

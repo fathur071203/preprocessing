@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 10s # Seberapa sering Prometheus mengambil metrik dari target
+  evaluation_interval: 10s # Seberapa sering Prometheus mengevaluasi aturan alerting
+
+scrape_configs:
+  - job_name: 'ml_model_exporter' # Nama job
+    # Menunjuk ke Prometheus Exporter Anda yang berjalan di port 8000
+    static_configs:
+      - targets: ['localhost:8000'] # IP dan port tempat exporter berjalan
